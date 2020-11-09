@@ -4,60 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ランダムくじ</title>
-    <style>
-        body {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .box{
-            width: 100px;
-            height: 100px;
-            background-color: aqua;
-            transition: 0.8s;
-            margin: 0 8px 8px 0;
-            text-align: center;
-            line-height: 100px;
-        }
-        .win{
-            background-color: pink;
-            border-radius: 50%;
-            transform: rotate(360deg);
-        }
-        .lose{
-            transform: scale(0.9);
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <script>
-        'use strict';
-
-        const num = 5;
-        const winner = Math.floor(Math.random() * num); // 0-4
-
-        for (let i = 0; i <= num; i++) {
-            const div = document.createElement('div');
-            div.classList.add('box');
-
-            div.addEventListener('click', () => {
-                if (i === winner) {
-                    div.textContent = '当たり！';
-                    div.classList.add('win');
-                } else {
-                    div.textContent = 'はずれ！';
-                    div.classList.add('lose');
-                }
-            });
-            document.body.appendChild(div);
-        }
-        const div = document.createElement('div');
-        div.classList.add('box');
-
-        // div.addEventListener('click', () => {
-        //     div.classList.toggle('circle');
-        // });
-    </script>
+    <h1>ランダムくじ</h1>
+    <section id="wrapper"></section>
+    <script src="./js/main.js"></script>
 </body>
 </html>
