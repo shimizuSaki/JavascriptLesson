@@ -1,3 +1,3 @@
 # JavascriptPractice
 
-This is file to practice of Javascript.
+This file is for practicing Javascript.
