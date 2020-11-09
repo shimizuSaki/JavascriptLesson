@@ -2,7 +2,7 @@
 
 // window.onload = function() {
     const num = 5;
-    const winner = Math.floor(Math.random() * num); // 0-4
+    const winner = createRandomNum(num);
 
     for (let i = 0; i <= num; i++) {
         const div = document.createElement('div');
@@ -18,6 +18,10 @@
         }
         });
         document.getElementById('wrapper').appendChild(div);
+    }
+    function createRandomNum(max_number) {
+        let result = Math.floor(Math.random() * max_number);
+        return result;
     }
     const div = document.createElement('div');
     div.classList.add('box');
