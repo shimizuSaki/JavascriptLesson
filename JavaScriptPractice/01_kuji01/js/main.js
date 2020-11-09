@@ -1,6 +1,6 @@
 'use strict';
 
-// window.onload = function() {
+window.onload = function() {
     const num = 5;
     const winner = createRandomNum(num);
 
@@ -25,4 +25,4 @@
     }
     const div = document.createElement('div');
     div.classList.add('box');
-// }
+}
