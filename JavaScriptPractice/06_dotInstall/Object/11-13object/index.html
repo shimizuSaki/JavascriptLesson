@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>オブジェクトの操作</title>
+</head>
+<body>
+<main>
+<pre>
+
+    ■オブジェクトのなかの値はプロパティーとよぶ。
+    プロパティーは
+    {
+        キー（名前）：値,
+        キー（名前）：値,
+    }
+    のように設定できる。
+
+    値は「delete point.y;」
+    のように消したり
+    「point.z = 90;」
+    のように足したりできる。
+
+
+    ■配列と同じようにスプレッド構文が利用できる。
+
+    const otherProps = {
+        r: 4,
+        color: 'red',
+    };
+
+    const point = {
+        x: 100, 
+        y: 180,
+        ...otherProps,
+    };
+
+    pointは
+    {
+        x: 100, 
+        y: 180,
+        r: 4,
+        color: 'red',
+    }
+
+    になる。
+
+
+    ■キー自体を取得したい場合、
+    const keys = Object.keys(point);
+    keys.forEach(key => {
+        console.log(`${key}`);
+    });
+    のようにして取得することができる。
+
+
+    ■オブジェクトが複数ある場合は[0][1]などのように
+    数を指定することで値を取り出すことができる。
+    const points = [
+        {x: 30, y: 20},
+        {x: 10, y: 50},
+        {x: 40, y: 40},
+    ];
+    console.log(points[1].y);
+
+
+</pre>
+</main>
+    <script src="js/main.js"></script>
+</body>
+</html>

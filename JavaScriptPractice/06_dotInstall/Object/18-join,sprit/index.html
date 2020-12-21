@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>文字列の連結、分割</title>
+</head>
+<body>
+<main>
+<pre>
+    ■join
+    <code>
+        const d = [2019, 11, 14]
+        console.log(d.join('/'));
+            →出力：2019/11/14
+    </code>
+    と書くと「d.join('')」のかっこの中身で文字を区切って表示することができる。
+    区切り文字なしで連結したい場合は何も入れないことで連結することができる。
+
+
+    ■sprit
+    <code>
+        const t = '17:08:24';
+        console.log(t.split(':'));
+    </code>
+    と書くと["17", "08", "24"]に分かれる。
+    このとき
+    <code>
+        const [h, m, s] = t.split(':');
+    </code>
+    のように取り出すと１つづつ扱うことができるようになって便利。
+</pre>
+</main>
+    <script src="js/main.js"></script>
+</body>
+</html>

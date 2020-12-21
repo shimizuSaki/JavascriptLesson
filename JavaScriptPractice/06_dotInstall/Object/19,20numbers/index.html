@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>数字に関する機能</title>
+</head>
+<body>
+<main>
+<pre>
+
+        const scores = [10, 3, 9];
+
+    ■合計
+    <code>
+        let sum = 0;
+        scores.forEach(score => {
+            sum += score;
+        });
+        console.log(sum);
+    </code>
+
+    ■平均値
+    <code>
+        let avg = sum / scores.length;
+    </code>
+
+    ■小数点以下を切り捨て
+    <code>
+        Math.floor(xxx)
+    </code>
+
+    ■小数点以下を切り上げ
+    <code>
+        Math.ceil(xxx)
+    </code>
+
+    ■四捨五入
+    <code>
+        Math.round(xxx)
+    </code>
+
+    ■小数点以下？桁
+    <code>
+        Math.round(？)
+    </code>
+
+    ■0以上1数値を未満のランダム生成
+    <code>
+        Math.random()
+    </code>
+
+    ■0以上3数値を未満のランダム生成
+    <code>
+        Math.random() * 3
+    </code>
+
+    ■0~nの数値をランダム生成
+    <code>
+        Math.random() * (n + 1)
+    </code>
+
+    ■min, ..., maxの数値をランダム生成
+    <code>
+    Math.floor(Math.random() * (max + 1 - min)) + min
+    </code>
+</pre>
+</main>
+    <script src="js/main.js"></script>
+</body>
+</html>
