@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>inputからの情報の受け渡し</title>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <button>Post</button>
+    </form>
+    <p>
+        フォームのpreventEvent（遷移してしまう）をキャンセル。<br>
+        formを使うメリットはエンターキーで送信できること。<br>
+        本来はbuttonがないとエンターキーで送信されないが、<br>
+        text１つだけの場合はエンターキーのみで送信できる。<br>
+    </p>
+    <script src="js/main.js"></script>
+</body>
+</html>

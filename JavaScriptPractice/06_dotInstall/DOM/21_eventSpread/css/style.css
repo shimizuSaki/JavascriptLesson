@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: #efefef;
+}
+
+li {
+    cursor: pointer;
+}
+
+li.done {
+    text-decoration: line-through;
+}
