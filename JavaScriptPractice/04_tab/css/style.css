@@ -48,26 +48,26 @@ section + section {
     border-radius: 8px;
 }
 
-.tab-group {
+.tab_controller {
     width: 100%;
     display: flex;
 }
 
-.tab-group .is-active{
+.tab_controller .is-active{
     background-color: black;
     color: #fff;
 }
 
-.tab-group .tab {
+.tab_controller .tab {
     display:inline-block;
     padding: 4px 8px;
     border: 1px solid #ccc;
 }
 
-.panel-group .panel {
+.tab_contents .panel {
     display: none;
 }
 
-.panel-group .is-show {
+.tab_contents .panel .is-active {
     display: block;
 }
