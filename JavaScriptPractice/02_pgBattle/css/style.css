@@ -1,0 +1,301 @@
+/* 
+body{
+	line-height: 1.6;
+	line-height: 2;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.wrap{
+	width: 90%;
+	margin: 80px auto;
+	max-width: 960px;
+}
+
+.title{
+	margin-bottom: 10px;
+}
+
+h1{
+	text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+.box{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.item-name{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+} */
+
+
+/* ----------------------------- */
+/* ------ input,textarea  ------ */
+/* ----------------------------- */
+
+
+input[type='text'],
+input[type='number']{
+	width: 100%;
+	max-width: 400px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+input[type='submit']{
+	border: none;
+	display: block;
+	width: 100%;
+	max-width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+textarea{
+	width: 100%;
+	height: 300px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+/* ---------------------------- */
+/* ---------- radio  ---------- */
+/* ---------------------------- */
+
+
+.radio-wrap label{
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.radio-wrap input{
+	display: none;
+}
+
+.radio-wrap input + span{
+	padding-left: 22px;
+	position:relative;
+}
+
+.radio-wrap input + span::before{
+	content: "";
+	background-image: url(../img/radio.png);
+	background-size: contain;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+}
+
+.radio-wrap input:checked + span{
+	color: #487cff;
+	font-weight: bold;
+}
+
+.radio-wrap input:checked + span::after{
+	content: "";
+	background-image: url(../img/radio-checked.png);
+	background-size: contain;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+}
+
+
+/* --------------------------- */
+/* -------- checkbox  -------- */
+/* --------------------------- */
+
+
+.checkbox-wrap label{
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.checkbox-wrap input{
+	display: none;
+}
+
+.checkbox-wrap input + span{
+	padding-left: 22px;
+	position:relative;
+}
+
+.checkbox-wrap input + span::before{
+	content: "";
+	background-image: url(../img/check.png);
+	background-size: contain;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+}
+
+.checkbox-wrap input:checked + span{
+	color: #487cff;
+	font-weight: bold;
+}
+
+.checkbox-wrap input:checked + span::after{
+	content: "";
+	background-image: url(../img/check-checked.png);
+	background-size: contain;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+}
+
+
+/* ----------------------------- */
+/* ---------- select  ---------- */
+/* ----------------------------- */
+
+
+.select-wrap {
+	position: relative;
+	width: 100%;
+	max-width: 250px;
+}
+
+.select-wrap:before {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%) translateX(0);
+	content: '';
+	width: 15px;
+	height: 15px;
+	background: url(../img/select.png) no-repeat;
+	background-size: contain;
+}
+
+.select-wrap select{
+	width: 100%;
+	outline:none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	height: 40px;
+	padding: 5px;
+	border:1px solid #ccc;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.select-wrap select::-ms-expand {
+    display: none;
+}
+
+
+/* ----------------------------- */
+/* ---------- button  ---------- */
+/* ----------------------------- */
+
+button {
+    margin-left: 0;
+    padding: 8px;
+    width: 100px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/* ----------------------------- */
+/* -----  ここまでリセット  ------ */
+/* ----------------------------- */
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+*{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	box-sizing: border-box;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    padding: 20px 0;
+    background-color: #efefef;
+}
+main {
+    margin: 0 auto;
+    padding: 20px;
+    width: 800px;
+}
+section {
+	padding: 20px;
+	background-color: #fff;
+}
+section + section {
+    margin-top: 40px;
+}
+h1, h2,	h3 {
+	font-weight: bold;
+}
+label {
+	display: block;
+}
+.box {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+.result-box {
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #efefef;
+}

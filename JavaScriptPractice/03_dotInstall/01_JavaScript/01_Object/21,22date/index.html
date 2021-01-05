@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>時間に関する機能</title>
+</head>
+<body>
+<main>
+<pre>
+    
+    
+    ■現在時刻の取得 (日本の場合は日本標準時)
+    <code>
+        new Date()
+    </code>
+    const d = new Date();
+    
+    ■UTC（協定世界時）
+    <code>
+        d.getTime()
+    </code>
+    ■月日に関する取得
+    <code>
+        ▶︎ 年
+        d.getFullYear
+
+        ▶︎ 月
+        d.getMonth
+
+        ▶︎ 日
+        d.getDate
+
+        ▶︎ 曜日（0~6）(日曜日始まり)
+        d.getDay
+    </code>
+    ■時間に関する取得
+    <code>
+        ▶︎ 時間
+        d.getHours
+
+        ▶︎ 分
+        d.getMinutes
+
+        ▶︎ 秒
+        d.getSeconds
+
+        ▶︎ ミリ秒
+        d.getMilliseconds
+    </code>
+</pre>
+</main>
+    <script src="js/main.js"></script>
+</body>
+</html>

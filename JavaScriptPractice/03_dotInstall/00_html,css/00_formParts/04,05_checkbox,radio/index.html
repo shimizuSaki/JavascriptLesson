@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>default</title>
+</head>
+<body>
+<main>
+<fieldset>
+    <legend>お使いのスマホ</legend>
+    <label><input type="checkbox">iPhone</label>
+    <label><input type="checkbox" checked>Android</label>
+    <label><input type="checkbox">その他</label>
+</fieldset>
+<pre>
+    legendで入力部品をグループ化することができる。
+<code>
+&lt;fieldset&gt;
+    &lt;legend&gt;お使いのスマホ&lt;/legend&gt;
+    &lt;label&gt;&lt;input type="checkbox"&gt;iPhone&lt;/label&gt;
+    &lt;label&gt;&lt;input type="checkbox" checked&gt;Android&lt;/label&gt;
+    &lt;label&gt;&lt;input type="checkbox"&gt;その他&lt;/label&gt;
+&lt;/fieldset&gt;
+</code>
+</pre>
+
+<fieldset>
+    <legend>一番好きなスマホ</legend>
+    <label><input type="radio" name="likePhone">iPhone</label>
+    <label><input type="radio" name="likePhone" checked>Android</label>
+    <label><input type="radio" name="likePhone">その他</label>
+</fieldset>
+<pre>
+    おなじname属性にすることで１つだけ選択できるボタンになる。
+<code>
+&lt;fieldset&gt;
+    &lt;legend&gt;お使いのスマホ&lt;/legend&gt;
+    &lt;label&gt;&lt;input type="radio" name="likePhone"&gt;iPhone&lt;/label&gt;
+    &lt;label&gt;&lt;input type="radio" name="likePhone" checked&gt;Android&lt;/label&gt;
+    &lt;label&gt;&lt;input type="radio" name="likePhone"&gt;その他&lt;/label&gt;
+&lt;/fieldset&gt;
+</code>
+</pre>
+
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

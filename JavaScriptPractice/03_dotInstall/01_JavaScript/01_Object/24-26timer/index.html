@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" />
+<title>文字列の連結、分割</title>
+</head>
+<body>
+<main>
+<pre>
+
+  ■一定時間ごとに繰り返し処理
+  一定
+  setInterval(処理, ミリ秒);
+  <code>
+    let i = 1;
+    function countTime() {
+      console.log(`${i}回目の処理`);
+      i++;
+      if (i > 3) {
+        clearInterval(intervalId);
+      }
+    }
+    const intervalId = setInterval(countTime, 1000);
+  </code>
+  処理の部分には関数を渡すこともできる。
+
+
+  ■指定した時間の後に一度だけ処理
+  setTimeout(処理, ミリ秒);
+  <code>
+    function showTime() {
+      alert('リロード5秒後に1度だけメッセージ');
+    };
+    setTimeout(showTime, 5000);
+  </code>
+  処理の部分には関数を渡すこともできる。
+  
+  
+  ■setTimeoutを使ってもループ処理で一定期間ごとに繰り返しができる。
+  １つ前の処理が終わってから処理が走る。
+  <code>
+  let j = 0;
+  function timeLap() {
+    console.log('タイムラップ' + `${j}`);
+    const timeLapId = setTimeout(timeLap, 1000);
+    j++;
+    if (j > 4) {
+      clearTimeout(timeLapId);
+    }
+  };
+  timeLap();
+  </code>
+</pre>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
