@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>完成！JavaScriptタブ切り替え</title>
+    <title>JavaScriptタブ切り替え</title>
 </head>
 <body>
     <header>
-        <h1>完成！JavaScriptタブ切り替え練習</h1>
+        <h1>JavaScriptタブ切り替え練習<br>未完成</h1>
     </header>
     <main>
         <section>
-            <!--イベントを発火させたいクラスをまずそれぞれ定義します。-->
             <div class="panel">
-                <ul class="tab-group">
+                <ul class="tab_controller">
                     <li class="tab jsTabA is-active" id="jsTabA">タブ-1</li>
                     <li class="tab jsTabB" id="jsTabB">タブ-2</li>
                     <li class="tab jsTabC" id="jsTabC">タブ-3</li>
                 </ul>
-            
-            <!--タブを切り替えて表示するコンテンツ-->
-                <div class="panel-group">
-                    <div class="panel jsPanelA is-show">コンテンツ-1</div>
+                <!--タブを切り替えて表示するコンテンツ-->
+                <div class="tab_contents">
+                    <div class="panel jsPanelA is-active">コンテンツ-1</div>
                     <div class="panel jsPanelB">コンテンツ-2</div>
                     <div class="panel jsPanelC">コンテンツ-3</div>
                 </div>
