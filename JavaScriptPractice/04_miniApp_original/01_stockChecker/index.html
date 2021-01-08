@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>材料不足チェッカー</title>
+</head>
+<body>
+    <h1>材料不足チェッカー</h1>
+    <p>
+        ボタンを押すとその料理が作れるかどうか判定されます。<br>
+        食材が足りる場合のみ料理を作るかの確認が出て、0Kを押すと材料が消費されます。
+    </p>
+    <section>
+        <h2>つくりたい料理</h2>
+        <div class="formItem">
+            <label>
+                <input type="button" value="たまごかけごはん" id="tamagokakeGohan" data-egg="1">
+                （卵1個）
+            </label>
+            <label>
+                <input type="button" value="親子丼" id="oyakodon" data-egg="2">
+                （卵2個）
+            </label>
+            <label>
+                <input type="button" value="だし巻き卵" id="dashimakiTamago" data-egg="3">
+                （卵3個）
+            </label>
+            <label>
+                <input type="button" value="ミルクティー" id="milktea" data-milk="250">
+                （牛乳250ml）
+            </label>
+            <label>
+                <input type="button" value="プリン" id="purine" data-egg="2" data-milk="250">
+                （卵2個、牛乳250ml）
+            </label>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>食材のストック</h2>
+            <ul id="stock">
+                <li id="stockEgg">たまご10個</li>
+                <li id="stockMilk">牛乳1000ml</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>作った料理</h2>
+            <p id="cooked">まだ料理を作っていません。</p>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

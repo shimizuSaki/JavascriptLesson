@@ -1,0 +1,38 @@
+body {
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  width: fit-content;
+}
+
+label + label {
+  margin-top: 4px;
+}
+
+label > span {
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+h2 {
+  padding: 4px 8px 4px;
+  border-left: 4px solid olive;
+  background-color: rgba(128, 128, 0, 0.1);
+}
+
+button {
+  cursor: pointer;
+}
+
+.formItem {
+  padding: 8px;
+  background-color: cornsilk;
+}
+.formItem + .formItem {
+  border-top: 1px solid #fff;
+}
