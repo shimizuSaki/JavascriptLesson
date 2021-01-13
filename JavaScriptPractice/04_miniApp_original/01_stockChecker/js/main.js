@@ -6,38 +6,35 @@
   };
   let cookedDishes = [];
 
-  function confirmStock(data) {
-    let cookDish = String(data.name);
-    const useEgg = Math.floor(data.egg);
-    const useMilk = Math.floor(data.milk);
+  function confirmStock(dish) {
     let message = [];
-    if (data.milk === 0 && data.egg === 0) {
+    if (dish.milk === 0 && dish.egg === 0) {
       return false;
     }
-    if (stock.egg < useEgg && stock.milk < useMilk) {
+    if (stock.egg < dish.egg && stock.milk < dish.milk) {
       return alert('卵と牛乳が足りません。');
     }
-    if (useEgg) {
-      if (stock.egg < useEgg) {
+    if (dish.egg) {
+      if (stock.egg < dish.egg) {
         return alert('卵が足りません。');
       }
-      if (stock.egg === useEgg) {
+      if (stock.egg === dish.egg) {
         message += '卵がなくなります。';
       }
     }
-    if (useMilk) {
-      if (stock.milk < useMilk) {
+    if (dish.milk) {
+      if (stock.milk < dish.milk) {
         return alert('牛乳が足りません。');
       }
-      if (stock.milk === useMilk) {
+      if (stock.milk === dish.milk) {
         message += '牛乳がなくなります。';
       }
     }
-    if (confirm(`${message}材料を使って${cookDish}を作りますか？`)) {
-      stock.egg -= useEgg;
-      stock.milk -= useMilk;
+    if (confirm(`${message}材料を使って${dish.name}を作りますか？`)) {
+      stock.egg -= dish.egg;
+      stock.milk -= dish.milk;
       stockRender(stock);
-      recordRender(cookDish);
+      recordRender(dish.name);
     }
   }
 
@@ -47,26 +44,21 @@
   }
   function recordRender(cookDish) {
     cookedDishes.push(cookDish);
-    document.getElementById('cooked').textContent = cookedDishes.join('、');
+    document.getElementById('cookedRecord').textContent = cookedDishes.join('、');
   }
 
   // クリックされた時の処理
-  document.addEventListener('click', function(e) {
-    if (e.target.getAttribute('value')) {
-      let dish = {
-          name : 'name',
-          egg : 0,
-          milk : 0,
-      };
-      // 押された要素のデータ属性の値をdishに格納する
-      dish.name = e.target.getAttribute('value');
-      if (e.target.getAttribute('data-egg')) {
-        dish.egg = e.target.getAttribute('data-egg');
+  const cookDish =　document.getElementsByClassName('js-cookDish');
+  for (let i = 0; i < cookDish.length; i++) {
+    cookDish[i].addEventListener('click', function(e) {
+      if (e.target.getAttribute('value')) {
+        const dish = {
+          name : String(e.target.getAttribute('value')),
+          egg : Math.floor(e.target.getAttribute('data-egg')),
+          milk : Math.floor(e.target.getAttribute('data-milk')),
+        };
+        confirmStock(dish);
       }
-      if (e.target.getAttribute('data-milk')) {
-        dish.milk = e.target.getAttribute('data-milk');
-      }
-      confirmStock(dish);
-    }
-  });
+    });
+  }
 }
