@@ -1,0 +1,56 @@
+body {
+    position: relative;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #efefef;
+}
+
+th,
+td {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #efefef;
+}
+
+thead,
+tfoot {
+    background-color: #efefef;
+}
+
+tbody td:first-child {
+    color: red;
+    background-color: #ffeeee;
+}
+
+tbody td:last-child {
+    color: blue;
+    background-color: #eeeeff;
+
+}
+tbody td.disabled {
+    opacity: 0.3;
+}
+
+tbody td.today {
+    font-weight: bold;
+    background-color: #888888;
+    color: #fff;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+#next,
+#prev,
+#today {
+    cursor: pointer;
+    user-select: none;
+}
