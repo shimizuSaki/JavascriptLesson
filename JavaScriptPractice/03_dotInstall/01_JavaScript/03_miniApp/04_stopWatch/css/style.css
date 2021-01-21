@@ -1,0 +1,33 @@
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    background: #eee;
+}
+
+.container {
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+#timer {
+    background: #ddd;
+    padding: 50px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.button { 
+    display: inline-block;
+    background-color: #888;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px 30px;
+}
+.inactive {
+    pointer-events: none;
+    background-color: #ccc;
+}
