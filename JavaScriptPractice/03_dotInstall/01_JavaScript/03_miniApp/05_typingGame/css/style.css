@@ -1,0 +1,11 @@
+body {
+    padding: 40px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    font-size: 14px;
+    background: #eee;
+}
+#target {
+    font-size: 48px;
+    letter-spacing: .1em;
+}
