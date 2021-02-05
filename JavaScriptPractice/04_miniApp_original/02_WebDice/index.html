@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Webダイス</title>
+</head>
+<body>
+  <main>
+    <h1>Webダイス</h1>
+    <article class="diceContainer">
+      <section>
+        <h2>ダイスロール</h2>
+        <p class="message">お好みのダイスをクリック！</p>
+        <ul class="diceList">
+          <li class="diceItem">
+            <p>1D100</p>
+            <input class="js-dice" name="1D100" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>1D10</p>
+            <input class="js-dice" name="1D10" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>3D6</p>
+            <input class="js-dice" name="3D6" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>1D6</p>
+            <input class="js-dice" name="1D6" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>1D4</p>
+            <input class="js-dice" name="1D4" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>2D3</p>
+            <input class="js-dice" name="2D3" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>1D3</p>
+            <input class="js-dice" name="1D3" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>1D8</p>
+            <input class="js-dice" name="1D8" type="button" value="ダイスをふる">
+          </li>
+          <li class="diceItem">
+            <p>1D20</p>
+            <input class="js-dice" name="1D20" type="button" value="ダイスをふる">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>ダイスログ</h2>
+        <table id="recordTable">
+          <thead>
+            <tr>
+              <th class="w100">ダイス</th>
+              <th class="w100">合計</th>
+              <th class="w200">出目</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+main {
+  padding: 24px;
+}
+section {
+  padding: 10px 0;
+}
+
+h2 {
+  padding: 0.5em;
+  color: #494949;
+  background: #fffaf4;
+  border-left: solid 5px #ffaf58;
+  margin-bottom: 16px;
+}
+
+.diceList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 0;
+}
+
+.diceItem {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 4px;
+  list-style: none;
+}
+
+table {
+  max-width: 100%;
+  border-collapse:  collapse;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+tbody tr:hover {
+  background-color: rgb(255, 255, 226);
+}
+
+th,td {
+  text-align: center;
+  width:  80px; 
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #eee;
+}
+
+.w100 {
+  width: 100px;
+}
+
+.w200 {
+  width: 200px;
+}
