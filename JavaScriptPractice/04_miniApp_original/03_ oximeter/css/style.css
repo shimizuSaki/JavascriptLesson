@@ -1,0 +1,26 @@
+main {
+    padding: 24px;
+}
+section {
+    padding: 10px 0;
+}
+
+h2 {
+    padding: 0.5em;
+    color: #494949;
+    background: #fffaf4;
+    border-left: solid 5px #ffaf58;
+    margin-bottom: 16px;
+}
+
+.meter {
+    text-align: center;
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #bffffa;
+}
+
+.oxygen {
+    font-size: 30px;
+}

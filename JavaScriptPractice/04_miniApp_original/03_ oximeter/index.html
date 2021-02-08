@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>酸素感知換気システム</title>
+</head>
+<body>
+    <main>
+        <section>
+            <p class="meter">
+                現在の酸素濃度は
+                <span id="oxygen" class="oxygen">21</span>%です
+            </p>
+            <p id="status">換気中です。</p>
+        </section>
+        <section>
+            <h2>換気ルール</h2>
+            <p>18度未満のときに換気扇を回します</p>
+        </section>
+        <section>
+            <h2>酸素濃度に影響するもの</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>もの</th><th>状況</th><th>効果</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>換気扇</td><td>晴れの時</td><td>酸素濃度をあげる</td></tr>
+                    <tr><td>観葉植物</td><td>晴れの時</td><td>酸素濃度をちょっとあげる</td></tr>
+                    <tr><td>人間</td><td>いる時</td><td>酸素濃度を下げる</td></tr>
+                    <tr><td>ねずみ</td><td>いる時</td><td>酸素濃度をちょっと下げる</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>酸素濃度基準値</h2>
+            <dl>
+                <dt>21%以上</dt>
+                <dd>正常です</dd>
+                <dt>18%</dt>
+                <dd>安全下限界です。換気が必要です。</dd>
+                <dt>16~12%</dt>
+                <dd>酸欠症状が現れます</dd>
+                <dt>14~9%</dt>
+                <dd>まともにあるけなくなります</dd>
+                <dt>10~6%</dt>
+                <dd>意識を失い、死に至る可能性があります</dd>
+            </dl>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
