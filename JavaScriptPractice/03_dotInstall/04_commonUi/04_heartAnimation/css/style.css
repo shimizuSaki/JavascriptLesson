@@ -1,0 +1,91 @@
+body {
+    padding: 40px;
+}
+
+.heart {
+    font-size: 40px;
+    color: #e4e4e4;
+    user-select: none;
+    position: relative;
+    top: 1px;
+}
+
+.like {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.like:hover {
+    background-color: #f5f5f5;
+}
+
+.like [type="checkbox"] {
+    display: none;
+}
+
+.like [type="checkbox"]:checked ~ .heart {
+    /* color:rgb(255, 79, 79); */
+    animation: heart;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        color: rgb(255, 79, 79);
+    }
+}
+@keyframes heart {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        color: rgb(255, 79, 79);
+    }
+}
+
+.ripple {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background: red;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: background .3s;
+}
+
+.like [type="checkbox"]:checked ~ .ripple {
+    /* color:rgb(255, 79, 79); */
+    animation: ripple;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        color: rgb(255, 79, 79);
+        opacity: 0;
+    }
+}
